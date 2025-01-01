@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Page - Happy New Year, Koyel!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="fireworks"></div>
+    <div id="sparkles"></div>
+    <div id="confetti"></div>
+
+    <header class="hero section">
+        <div class="hero-content">
+            <h1>Happy New Year, Koyel!</h1>
+            <p>Let's celebrate our friendship and the memories we've made</p>
+            <button id="beginButton" class="click-here">Begin Our Journey</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="story" class="section">
+            <h2>Our Story</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="images/first-meet.jpeg" alt="Our first meeting">
+                        <p>Remember when we first met?</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/our-adventure.jpeg" alt="Our hiking adventure">
+                        <p>Our adventures together</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/your-nautiness.jpeg" alt="Your playful moments">
+                        <p>Funny Moments</p>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Our Precious Moments from Last Year</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item large"><img src="images/1.jpeg" alt="Us at the beach"></div>
+                <div class="gallery-item"><img src="images/2.jpeg" alt="Birthday celebration"></div>
+                <div class="gallery-item"><img src="images/3.jpeg" alt="Road trip selfie"></div>
+                <div class="gallery-item large"><img src="images/4.jpeg" alt="Concert night"></div>
+                <div class="gallery-item"><img src="images/5.jpeg" alt="Cooking disaster"></div>
+                <div class="gallery-item"><img src="images/6.jpeg" alt="Picnic in the park"></div>
+                <div class="gallery-item"><img src="images/7.jpeg" alt="Halloween costumes"></div>
+                <div class="gallery-item"><img src="images/8.jpeg" alt="New Year's Eve party"></div>
+            </div>
+            <div class="navigation">
+                <button class="nav-btn" id="prev" aria-label="Previous gallery page">Previous</button>
+                <button class="nav-btn" id="next" aria-label="Next gallery page">Next</button>
+            </div>
+        </section>
+
+        <section id="message" class="section">
+            <div class="handwritten" aria-label="Handwritten message">
+                I wish the new year brings lots of smiles to your face! When things feel hard, I hope happy answers find you right away.
+            </div>
+        </section>
+
+        <section id="importance" class="section">
+            <h2>Why You're Important to Me</h2>
+            <div class="message-cards">
+                <div class="card pink">
+                    <h3>Your Unwavering Support</h3>
+                    <p>You've always been there for me, through thick and thin. Your support means the world to me.</p>
+                </div>
+                <div class="card purple">
+                    <h3>Your Infectious Laughter</h3>
+                    <p>Your joy brightens even the darkest of days. Your laughter is truly contagious!</p>
+                </div>
+                <div class="card yellow">
+                    <h3>Your Honest Advice</h3>
+                    <p>You're not afraid to tell me what I need to hear. Your honesty helps me grow.</p>
+                </div>
+                <div class="card pink-light">
+                    <h3>Your Kindness</h3>
+                    <p>Your compassion knows no bounds. You inspire me to be a better person every day.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wishing You a Happy New Year Again</p>
+        <p class="signature">With love, Sagar Kundu | 2025</p>
+    </footer>
+
+    <div id="memoryPopup" class="popup" aria-hidden="true">
+        <div class="popup-content">
+            <button class="close-popup" aria-label="Close popup">&times;</button>
+            <h2>Choose a Memory</h2>
+            <div class="memory-options">
+                <button class="memory-option" data-memory="first">Our First Memory</button>
+                <button class="memory-option" data-memory="funny">Funny Moment</button>
+                <button class="memory-option" data-memory="adventure">Biggest Adventure</button>
+                <button class="memory-option" data-memory="milestone">A Milestone</button>
+            </div>
+            <div id="selectedMemory" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
+
