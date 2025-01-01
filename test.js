@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="handshake">
                 🤝
                 <h3 style="text-align:center;font-size:32px;">Congratulations!</h3>
-                <p style="text-align:center;font-size:24px;">We are officially friends for next year!</p>
+                <p style="text-align:justify;font-size:24px;">Let's be partners-in-crime forever—ready for mischief, laughter, and unforgettable moments together!</p>
             </div>
             <button class="agree-btn">I Agree</button>
         </div>
@@ -190,16 +190,13 @@ function showItem(index) {
 
             switch (memory) {
                 case 'first':
-                    content = '<h4>Our First Memory</h4><p>Remember when we first met at the coffee shop? You spilled your latte all over my new shoes, and we couldn\'t stop laughing about it!</p>';
+                    content = '<h4>Our First Memory</h4><p>Remember the first time I messaged you on WhatsApp to let you know about Anurag Sir\'s classes? We both barely knew each other back then.</p>';
                     break;
                 case 'funny':
-                    content = '<h4>Funny Moments</h4><p>That time we tried to bake a cake for Sarah\'s birthday, but it ended up looking more like a volcano eruption. We still ate it though!</p>';
+                    content = '<h4>Funny Moments</h4><p>You sat on top of my higher bench to complete your project and draw the lines for the Digital Electronics project.</p>';
                     break;
                 case 'adventure':
-                    content = '<h4>Our Biggest Adventure</h4><p>Our spontaneous road trip to the coast last summer was unforgettable. Getting lost and finding that hidden beach was the best part!</p>';
-                    break;
-                case 'milestone':
-                    content = '<h4>A Milestone We Achieved</h4><p>Graduating together and throwing our caps in the air - I\'ll never forget the look of pride and joy on your face. We did it!</p>';
+                    content = '<h4>Our Biggest Adventure</h4><p>There is no adventure we are supposed to do till now, but soon we will make it happen.</p>';
                     break;
             }
 
