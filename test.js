@@ -71,7 +71,7 @@ function showItem(index) {
         firework.style.animationDuration = Math.random() * 2 + 1 + 's';
         firework.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
         document.getElementById('fireworks').appendChild(firework);
-        setTimeout(() => firework.remove(), 6000);
+        setTimeout(() => firework.remove(), 3000);
     }
 
     function createSparkle() {
@@ -81,7 +81,7 @@ function showItem(index) {
         sparkle.style.top = Math.random() * 100 + 'vh';
         sparkle.style.animationDuration = Math.random() * 1 + 5 + 's';
         document.getElementById('sparkles').appendChild(sparkle);
-        setTimeout(() => sparkle.remove(), 6000);
+        setTimeout(() => sparkle.remove(), 3000);
     }
 
     function createConfetti() {
@@ -101,7 +101,7 @@ function showItem(index) {
                 { transform: 'translateY(0) rotate(0)', opacity: 1 },
                 { transform: `translateY(100vh) rotate(${Math.random() * 360}deg)`, opacity: 0 }
             ], {
-                duration: 3000 + Math.random() * 1000,
+                duration: 2000 + Math.random() * 1000,
                 easing: 'cubic-bezier(.37,0,.63,1)'
             });
 
@@ -119,7 +119,7 @@ function showItem(index) {
         sparkleTimeout = setTimeout(() => {
             const sparkles = document.querySelectorAll('.sparkle');
             sparkles.forEach(sparkle => sparkle.remove());
-        }, 10000);
+        }, 9000);
 
         requestAnimationFrame(createAnimations);
     }
