@@ -268,10 +268,10 @@ function showItem(index) {
         }
     });
 
-    document.addEventListener('mousemove', function(e) {
-        createHeart(e.clientX, e.clientY);
-        heartSize = Math.min(heartSize + 1, maxHeartSize);
-    });
+    // document.addEventListener('mousemove', function(e) {
+    //     createHeart(e.clientX, e.clientY);
+    //     heartSize = Math.min(heartSize + 1, maxHeartSize);
+    // });
 
     // Initialization
     const observer = new IntersectionObserver((entries) => {
