@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="handshake">
                 🤝
                 <h3 style="text-align:center;font-size:32px;">Congratulations!</h3>
-                <p style="text-align:justify;font-size:24px;">Let's be partners-in-crime forever—ready for mischief, laughter, and unforgettable moments together!</p>
+                <p style="text-align:center;font-size:14px;">Let's be partners-in-crime forever—ready for mischief, laughter, and unforgettable moments together!</p>
             </div>
             <button class="agree-btn">I Agree</button>
         </div>
